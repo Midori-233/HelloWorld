@@ -31,7 +31,16 @@ if (!localStorage.getItem('name')) {
 
 myButton.onclick = function() {
   setUserName();
-};
+}
 
 let myTime = document.querySelector('h2');
-myTime.innerHTML = "TIME:" + Date();
+
+setInterval(function() {
+    myTime.innerHTML = "TIME:" + Date();
+}, 500);
+
+/*for(true){
+    myTime.innerHTML = "TIME:" + Date();
+    t=setTimeout(function(){flag=1;},1000*1);
+}*/
+
