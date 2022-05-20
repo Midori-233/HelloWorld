@@ -32,3 +32,6 @@ if (!localStorage.getItem('name')) {
 myButton.onclick = function() {
   setUserName();
 };
+
+let myTime = document.querySelector('h2');
+myTime.innerHTML = "TIME:" + Date();
