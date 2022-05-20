@@ -37,10 +37,6 @@ let myTime = document.querySelector('h2');
 
 setInterval(function() {
     myTime.innerHTML = "TIME:" + Date();
-}, 500);
+}, 1000);
 
-/*for(true){
-    myTime.innerHTML = "TIME:" + Date();
-    t=setTimeout(function(){flag=1;},1000*1);
-}*/
 
